@@ -1,3 +1,6 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
 body {
   background-image: url("../images/bg-desktop.svg");
   background-repeat: no-repeat;
@@ -5,7 +8,58 @@ body {
   background-position: center;
   min-height: 100vh;
   background-color: #6648b1;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+  font: 600 2.5rem "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.main-img {
+  margin: 7.5rem 0 5rem 7rem;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40vh;
+  margin: 9rem 3.5rem 9rem 2rem;
+}
+
+.text-body {
+  line-height: 1.8rem;
+  font-size: 1.05rem;
+  opacity: 0.8;
+}
+
+.register-button {
+  border: 1px solid #fff;
+  border-radius: 30px;
+  width: 11.5rem;
+  height: 3.3rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color:rgba(102,72,177,0.8);
+  font-size: 1.1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @import "media";
-
