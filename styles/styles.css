@@ -106,15 +106,15 @@ body {
   cursor: pointer;
 }
 
-.logo {
-  margin: 3.5rem 0 0 8.5rem;
-}
-
 main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+}
+
+.logo {
+  margin: 3.5rem 0 0 8.5rem;
 }
 
 .content-wrapper {
@@ -138,6 +138,11 @@ main {
 
 .title {
   font: 600 2.5rem "Poppins", sans-serif;
+}
+
+.line-break-desktop::before {
+  content: "\a";
+  white-space: pre;
 }
 
 .text-body {
@@ -190,22 +195,68 @@ main {
   color: #FF00FF;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228deg, 45%, 44%);
-}
-
 @media only screen and (max-width: 375px) {
   body {
     background-image: url("../images/bg-mobile.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 50vh;
-    background-color: #6648B1;
+    background-size: auto;
+    background-position: top;
+    background-color: #6648b1;
+  }
+  main {
+    margin: 1.8rem;
+  }
+  .logo {
+    margin: 0.3rem 0 0 0;
+  }
+  .logo img {
+    width: 43%;
+  }
+  .content-wrapper {
+    flex-direction: column;
+    margin: 3.3rem 0 4rem 0;
+  }
+  .main-img {
+    width: 94%;
+    margin: 0;
+  }
+  .main-img img {
+    width: 100%;
+  }
+  .text-wrapper {
+    align-items: center;
+    margin: 4rem 0 0 0;
+  }
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .text-body {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .register-button {
+    width: 13rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+    margin-top: 1.3rem;
+  }
+  .line-break-desktop::before {
+    content: "";
+  }
+  .line-break-mobile::before {
+    content: "\a";
+    white-space: pre;
+  }
+  .social-icons {
+    justify-content: center;
+    margin: 0 0 4rem 0;
+  }
+  .fa {
+    padding: 5px;
+    font-size: 1rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    margin: 0 0.5rem 0 0.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
